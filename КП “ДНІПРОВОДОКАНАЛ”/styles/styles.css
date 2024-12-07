@@ -1,0 +1,463 @@
+/** @format */
+
+@font-face {
+  font-family: "DniproCity";
+  src: url("../font/DNIPROCITY-REGULAR.OTF") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DniproCity";
+  src: url("../font/DNIPROCITY-MEDIUM.OTF") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DniproCity";
+  src: url("../font/DNIPROCITY-BOLD.OTF") format("opentype");
+  font-weight: 700;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  font-family: "DniproCity";
+  min-width: min-content;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+  z-index: 2;
+}
+.container {
+  padding: 0px 10px;
+}
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.header__logo {
+  flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.header__logo img {
+  max-width: 100%;
+  display: block;
+}
+.header__burger {
+  display: none;
+}
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.header__list li {
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+}
+.header__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.main {
+  padding: 100px 25px 0px;
+}
+
+.header-2 {
+  margin-bottom: 40px;
+  background: #f7fbff;
+  padding: 25px 0;
+  box-shadow: 2px 4px 15px 2px #c6e9ff;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.header-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #78b1f4;
+}
+
+.announcement {
+  background-image: url("../img/Main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  margin-bottom: 100px;
+  padding: 90px 40px;
+}
+
+.announcement-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 45px;
+  border-radius: 20px;
+  background: rgba(213, 239, 255, 0.85);
+  backdrop-filter: blur(6px);
+  max-width: 350px;
+}
+
+.announcement-title {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.announcement-text {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.news {
+  margin-bottom: 100px;
+}
+
+.news-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 28.5px;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+}
+
+.news-box {
+  display: flex;
+  text-align: justify;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.news-box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-time {
+  text-align: center;
+  background: #424242;
+  color: #fff;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+.news-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.33px;
+}
+
+.services {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 80px;
+}
+
+.services-box {
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background: #fdfeff;
+  box-shadow: 2px 4px 15px 2px #c6ddff;
+}
+
+.services-text {
+  font-family: "DniproCity";
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24.5px;
+}
+
+.about {
+  display: none;
+  margin-bottom: 110px;
+}
+
+.about-servicse {
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 24.5px;
+  letter-spacing: 0.47px;
+}
+
+.about-2 {
+  display: flex;
+  justify-content: inherit;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  background: #fdfeff;
+  box-shadow: 2px 4px 15px 2px #c6ddff;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.about-title-2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24.5px;
+  letter-spacing: 0.47px;
+}
+
+.about-text-2,
+.about-text-list,
+.about-text-line-l,
+.about-text-line-lr {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.33px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.about-text-line-l,
+.about-text-line-lr {
+  margin-left: 6px;
+}
+
+.about-text-line-lr {
+  margin-right: 6px;
+}
+
+.docpanel {
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+.docpanel-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.docpanel-a {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 1px solid #000;
+  padding: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.docpanel-a.open {
+  display: flex;
+  opacity: 1;
+  max-height: 100%;
+}
+
+.docarrow {
+  text-align: center;
+  vertical-align: middle;
+  border-top: 7.5px solid transparent;
+  border-bottom: 7.5px solid transparent;
+  border-left: 15px solid blue;
+  transition: transform 0.3s ease 0s;
+}
+
+.docarrow.rotate {
+  transform: rotate(90deg);
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.FAQ-title {
+  margin-bottom: 50px;
+}
+
+.FAQ-title-text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 28.5px;
+  letter-spacing: 0.5px;
+}
+
+.FAQ-badge {
+  width: 48px;
+  height: 48px;
+  transform: rotate(12.075deg);
+  color: #78b1f4;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 51px;
+  border: 2px solid #78b1f4;
+  border-radius: 100%;
+}
+
+.FAQ-q {
+  padding: 35px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  background: #fdfeff;
+  box-shadow: 2px 4px 15px 2px #c6e9ff;
+}
+
+.FAQ-q-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQ-q-text {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.FAQ-arrow {
+  transition: transform 0.3s ease;
+}
+
+.FAQ-a {
+  color: #404040;
+  font-kerning: none;
+  display: none;
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 35px;
+}
+
+.FAQ-a-text {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  margin: 60px 0;
+}
+
+.cont-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  margin-bottom: 30px;
+}
+
+.cont-list {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 534px;
+}
+
+.cont-icon {
+  text-align: center;
+  align-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.cont-link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.footer {
+  background: #78b1f4;
+  padding: 20px 0;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.5px;
+  letter-spacing: 0.24px;
+}
+
+ol {
+  list-style: auto;
+}
+
+ul {
+  list-style: initial;
+}
+
+.m-t {
+  margin-top: 20px;
+}
+
+.gap {
+  gap: 20px;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

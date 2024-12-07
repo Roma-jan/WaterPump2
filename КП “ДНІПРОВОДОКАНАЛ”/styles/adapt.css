@@ -1,0 +1,260 @@
+/** @format */
+
+@media screen and (max-width: 1280px) {
+  .header-symbol {
+    height: 50px;
+    width: 40px;
+  }
+  .header-text {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 50px 25px 0px;
+  }
+  .header-symbol {
+    height: 40px;
+    width: 30px;
+  }
+  .header-text {
+    font-size: 27px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+  .header__body {
+    height: 50px;
+  }
+  .header__logo {
+    flex: 0 0 30px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__menu {
+    position: fixed;
+    text-align: center;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: darkturquoise;
+  }
+  .header__menu.active {
+    top: 0;
+    padding: 70px 10px 20px 10px;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-2 {
+    margin-bottom: 20px;
+    padding: 12.5px 0;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .header-symbol {
+    width: 15px;
+    height: 20px;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+  .announcement {
+    margin-bottom: 50px;
+    padding: 85px 64px;
+  }
+  .announcement-box {
+    padding: 17.5px 22.5px;
+    max-width: 175px;
+  }
+  .announcement-title {
+    font-size: 16.5px;
+  }
+  .announcement-text {
+    font-size: 12.5px;
+  }
+  .news {
+    margin-bottom: 100px;
+  }
+  .news-title {
+    font-size: 18px;
+    line-height: 14.25px;
+    margin-bottom: 25px;
+  }
+  .news-box {
+    gap: 10px;
+  }
+  .news-box-2 {
+    gap: 10px;
+  }
+  .news-time {
+    font-size: 6px;
+    line-height: 16px;
+  }
+  .news-img {
+    width: 50px;
+    height: 42.5px;
+  }
+  .news-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .services {
+    margin-bottom: 40px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .services-box {
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .services-image {
+    width: 22px;
+    height: 22px;
+  }
+  .services-text {
+    font-size: 14px;
+    line-height: 14.75px;
+  }
+  .about {
+    margin-bottom: 55px;
+  }
+  .about-servicse {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .about-text {
+    font-size: 23.5px;
+    line-height: 12.75px;
+  }
+  .about-image {
+    width: 19px;
+    height: 19px;
+  }
+  .about-title-2 {
+    font-size: 16px;
+    line-height: 12.5px;
+  }
+  .about-text-2,
+  .about-text-list,
+  .about-text-line-l,
+  .about-text-line-lr {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .list-item {
+    margin-left: 25px;
+  }
+  .FAQ-title {
+    margin-bottom: 25px;
+  }
+  .FAQ-title-text {
+    font-size: 18px;
+    line-height: 14.75px;
+  }
+  .FAQ-badge {
+    width: 24px;
+    height: 24px;
+    font-size: 17.5px;
+    line-height: 25.5px;
+  }
+  .FAQ-q {
+    padding: 17.5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  .FAQ-q-text {
+    font-size: 14px;
+  }
+  .FAQ-arrow {
+    width: 8px;
+    height: 7px;
+  }
+  .FAQ-a {
+    font-size: 12px;
+    padding-top: 17.5px;
+  }
+  .FAQ-a-text {
+    margin-bottom: 10px;
+  }
+  .contacts {
+    margin: 30px 0;
+  }
+  .cont-title {
+    font-size: 18px;
+    line-height: 24.5px;
+    margin-bottom: 15px;
+  }
+  .cont-list {
+    max-width: 267px;
+  }
+  .cont-link {
+    font-size: 15px;
+  }
+  .cont-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+  .footer-image {
+    width: 31px;
+    height: 31px;
+  }
+  .footer-text {
+    font-size: 12px;
+    line-height: 14.75px;
+  }
+  .gap {
+    gap: 10px;
+  }
+}
